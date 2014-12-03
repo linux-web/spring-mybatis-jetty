@@ -20,8 +20,6 @@ mvn clean package [-Dmaven.test.skip=true]
 2. http://localhost:8111/users/{uid}/{mid}   DELETE
 3. http://localhost:8111/users/{uid}/{mid}/gender  GET
 
-> 待修改Bug：执行DELETE操作时，狂打日志。。。
-
 ### 开发人员
 
 WeChat: wgybzb
