@@ -9,19 +9,14 @@
 	</parent>
 
 	<artifactId>spring-mybatis-jetty</artifactId>
-	<version>1.1.0</version>
+	<version>1.2.0</version>
 	<name>Spring Mybatis Jetty</name>
-
-	<properties>
-		<spring.old.version>3.2.3.RELEASE</spring.old.version>
-	</properties>
 
 	<dependencies>
 		<!-- Spring包 -->
 		<dependency>
 			<groupId>org.springframework</groupId>
 			<artifactId>spring-core</artifactId>
-			<version>${spring.old.version}</version><!--$NO-MVN-MAN-VER$-->
 			<exclusions>
 				<exclusion>
 					<artifactId>commons-logging</artifactId>
@@ -32,32 +27,26 @@
 		<dependency>
 			<groupId>org.springframework</groupId>
 			<artifactId>spring-webmvc</artifactId>
-			<version>${spring.old.version}</version><!--$NO-MVN-MAN-VER$-->
 		</dependency>
 		<dependency>
 			<groupId>org.springframework</groupId>
 			<artifactId>spring-tx</artifactId>
-			<version>${spring.old.version}</version><!--$NO-MVN-MAN-VER$-->
 		</dependency>
 		<dependency>
 			<groupId>org.springframework</groupId>
 			<artifactId>spring-context</artifactId>
-			<version>${spring.old.version}</version><!--$NO-MVN-MAN-VER$-->
 		</dependency>
 		<dependency>
 			<groupId>org.springframework</groupId>
 			<artifactId>spring-web</artifactId>
-			<version>${spring.old.version}</version><!--$NO-MVN-MAN-VER$-->
 		</dependency>
 		<dependency>
 			<groupId>org.springframework</groupId>
 			<artifactId>spring-jdbc</artifactId>
-			<version>${spring.old.version}</version><!--$NO-MVN-MAN-VER$-->
 		</dependency>
 		<dependency>
 			<groupId>org.springframework</groupId>
 			<artifactId>spring-test</artifactId>
-			<version>${spring.old.version}</version><!--$NO-MVN-MAN-VER$-->
 		</dependency>
 		<!-- Jetty包 -->
 		<dependency>
@@ -92,8 +81,12 @@
 		</dependency>
 		<!-- Json包 -->
 		<dependency>
-			<groupId>org.codehaus.jackson</groupId>
-			<artifactId>jackson-mapper-asl</artifactId>
+			<groupId>com.fasterxml.jackson.core</groupId>
+			<artifactId>jackson-core</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>com.fasterxml.jackson.core</groupId>
+			<artifactId>jackson-databind</artifactId>
 		</dependency>
 		<!-- 日志包 -->
 		<dependency>

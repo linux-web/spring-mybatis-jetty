@@ -1,7 +1,7 @@
 
 # 基于spring+mybatis+jetty实现API服务
 
-> Spring版本是3.2.3.RELEASE。
+> Spring版本是4.1.2.RELEASE。
 
 ### 项目使用
 
@@ -20,6 +20,7 @@ mvn clean package [-Dmaven.test.skip=true]
 ```
 
 ### 接口说明
+
 1. http://localhost:8111/users/{uid}   POST: User
 2. http://localhost:8111/users/{uid}/{mid}   DELETE
 3. http://localhost:8111/users/{uid}/{mid}/gender  GET

@@ -6,8 +6,7 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.Locale;
 
-import org.codehaus.jackson.map.ObjectMapper;
-import org.codehaus.jackson.map.SerializationConfig;
+import com.fasterxml.jackson.databind.ObjectMapper;
 
 /**
  * 自定义的ObjectMapper类，用于处理时间格式
@@ -17,12 +16,13 @@ import org.codehaus.jackson.map.SerializationConfig;
  */
 public class CustomObjectMapper extends ObjectMapper {
 
+	private static final long serialVersionUID = -3341366863221844412L;
+
 	public static DateFormat sinaDateFormat = new SimpleDateFormat("yyyy-MM-dd'T'HH:mm:ss", Locale.ENGLISH);
 
 	public CustomObjectMapper() {
 		super();
 		setDateFormat(sinaDateFormat);
-		configure(SerializationConfig.Feature.INDENT_OUTPUT, true);
 	}
 
 	/**
