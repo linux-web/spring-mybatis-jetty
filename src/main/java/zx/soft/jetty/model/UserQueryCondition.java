@@ -9,7 +9,7 @@ package zx.soft.jetty.model;
 public class UserQueryCondition {
 
 	private long uid;
-	private int gender;
+	private Integer gender;
 	private String name;
 	private String nick;
 
@@ -22,7 +22,7 @@ public class UserQueryCondition {
 		return this;
 	}
 
-	public int getGender() {
+	public Integer getGender() {
 		return gender;
 	}
 

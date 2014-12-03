@@ -31,7 +31,7 @@
 		<if test="nick != null">
 			AND `nick` LIKE #{nick}
 		</if>
-		<if test="gender != 0">
+		<if test="gender != null">
 			AND `gender` = #{gender}
 		</if>
 		ORDER BY user.mid DESC
